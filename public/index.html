@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mongoose Scraper</title>
+    <style>
+      body { background-color: rgb(140, 241, 245) }
+      #wrapper {
+        width: 960px;
+      }
+
+      button {
+        height: 24px
+      }
+
+      .parent {
+        background: url("images/newsBackground.jpg");
+        background-size: cover;
+        width: 1400px;
+        height: 400px;
+        position: relative;
+        border: 4px solid black;
+      }
+
+      .parent .child{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+
+      #articles {
+        display: inline-block;
+        overflow: auto;
+        width: 60%;
+        height: 700px;
+      }
+      #notes {
+        float: right;
+        width: 30%;
+      }
+      textarea, input {
+        display: block;
+        width: 100%;
+        background-color: #FCF5C7;
+      }
+      input {
+        height: 36px;
+        font-size: 24px;
+      }
+      textarea {
+        height: 200px;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id=header>
+        <div id="headercontent">
+          <h1>Tech News scraper</h1> <button id="Saved-Articles">Saved Articles</button> <button>Scrape Articles</button>
+        </div>
+        <br>
+       </div>
+      <div class="parent" id="topbackground">
+        <img class="child" src="images/newsImage.jpeg">
+      </div>
+      <div id="articles"></div>
+      <div id="notes"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
